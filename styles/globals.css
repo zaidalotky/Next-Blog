@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------ THEME VARIABLES ------------------ */
+html.light {
+  --bg-color: #abbfd3;
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --text-color: #202124;
+  --accent: #3b82f6;
+  --accent-hover: #1765cc;
+  --shadow-color: rgba(0, 0, 0, 0.205);
+  --btn-bg: #1a73e8
+}
+
+html.dark {
+  --bg-color: #111827;
+  --glass-bg: rgba(17, 24, 39, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --text-color: #f5f5f5;
+  --accent: #60a5fa;
+  --accent-hover: #3b82f6;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --btn-bg: #111827
+}
+::selection {
+  background: #e03910;
+  color: white;
+}
+/* ------------------ BODY & TYPOGRAPHY ------------------ */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* ------------------ GLASS CARDS ------------------ */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px var(--shadow-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.glass:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 48px var(--shadow-color);
+}
+
+/* ------------------ BUTTONS & NAV LINKS ------------------ */
+button, .btn, .nav-link {
+  background: var(--btn-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btn-bg);  
+}
+
+button:hover, .btn:hover, .nav-link:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 24px var(--shadow-color);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ------------------ NAVBAR LINKS ------------------ */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* space between links */
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 8px 32px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  background: var(--glass-bg) !important;
+  color: var(--text-color) !important;
+  border-radius: 0.75rem !important;
+}
+
+/* ------------------ PROSE & CONTENT ------------------ */
+.prose {
+  max-width: 100%;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  color: var(--text-color);
+}
+
+.prose a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.prose img {
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+}
+
+/* ------------------ UTILITY CLASSES ------------------ */
+.transition-smooth {
+  transition: all 0.3s ease-in-out;
+}
+
+.scale-hover:hover {
+  transform: scale(1.05);
+}
+
+.theme{
+  margin: 15px;
+
+}
+.theme button{
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.feature{
+  margin-bottom: 18px;
+  width: 80%;
+}
+.feature-pri{
+  gap: 15px;
+  width: 80%;
+}
+.Myblog{
+  color: #e03910;
+}
+.ExpolreBtn{
+  margin-bottom: 10px;
+}
+.ExpolreBtn:hover{
+  color:#e03910;
+  border-color: #e03910;
+}
+.droptheme{
+  transition: 0.5s;
+  z-index: 10;
+}
+.droptheme button{
+  margin-top:10px;
+  padding: 10px;
+}
+
+.blogs{
+  padding: 15px;
+  display: flex;
+  place-items: center;
+  background: var(--glass-bg);
+  flex-direction: column;
+
+
+}
+@media screen and (min-width: 768px) {
+  .blogs{
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start
+  }
+}
+.blogs-pri {
+    margin: 18px;
+  padding: 25px
+}
+.description:hover{
+  color:#e03910;
+  transition: 0.2s;
+}
+.d{
+  color:#df836c
+}
