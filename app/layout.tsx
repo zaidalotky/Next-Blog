@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'A modern, SEO-optimized, accessible blog built with Next.js and Tailwind CSS. Read posts about web dev, performance, and design.',
   metadataBase: new URL('https://yourdomain.com'),
   alternates: {
-    canonical: 'https://yourdomain.com',
+    canonical: 'https://blog-green-three-97.vercel.app/',
   },
   openGraph: {
     title: 'MyBlog — Modern Next.js Blog',
