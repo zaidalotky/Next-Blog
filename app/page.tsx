@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Welcome to MyBlog',
   description: 'Explore our modern, SEO-optimized blog about Next.js, Tailwind, and web development.',
   alternates: {
-    canonical: 'https://yourdomain.com',
+    canonical: 'https://blog-green-three-97.vercel.app/',
   },
 };
 
