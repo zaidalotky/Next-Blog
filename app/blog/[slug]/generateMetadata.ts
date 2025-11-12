@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
   }
 
-  const canonicalUrl = `https://yourdomain.com/blog/${params.slug}`;
+  const canonicalUrl = `https://blog-green-three-97.vercel.app/blog/${params.slug}`;
 
   return {
     title: post.title,
